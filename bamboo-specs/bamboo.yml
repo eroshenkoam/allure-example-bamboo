@@ -1,0 +1,14 @@
+---
+version: 2
+plan:
+  project-key: AL
+  key: ALEX
+  name: Allure Example
+stages:
+  - Build hull:
+      - Build
+
+Build:
+  tasks:
+    - script:
+        - ./gradlew clean test
