@@ -11,4 +11,4 @@ stages:
 Build:
   tasks:
     - script:
-        - ./gradlew clean test
+        - echo 'Hello World!'
