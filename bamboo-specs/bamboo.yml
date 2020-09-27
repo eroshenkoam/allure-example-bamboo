@@ -1,14 +1,15 @@
----
 version: 2
 plan:
   project-key: AL
-  key: ALEX
-  name: Allure Example
-stages:
-  - Build hull:
-      - Build
+  key: PLAN
+  name: My plan
 
-Build:
+stages:
+  - Compile:
+      jobs:
+        - Test
+
+Test:
   tasks:
     - script:
-        - echo 'Hello World!'
+        - ./gradlew clean test
