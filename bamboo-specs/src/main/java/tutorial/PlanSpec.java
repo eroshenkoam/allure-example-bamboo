@@ -70,7 +70,7 @@ public class PlanSpec {
                                         new ScriptTask()
                                                 .description("Test")
                                                 .inlineBody("./gradlew clean test"))))
-                .linkedRepositories("allure-example-bamboo")
+                .linkedRepositories("allure-example")
 
                 .triggers(new RepositoryPollingTrigger())
                 .planBranchManagement(new PlanBranchManagement()
