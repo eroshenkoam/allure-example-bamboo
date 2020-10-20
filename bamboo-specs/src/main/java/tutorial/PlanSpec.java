@@ -29,8 +29,8 @@ public class PlanSpec {
                 .oid(new BambooOid("1klogu67oyha9"))
                 .key(new BambooKey("AL"))
                 .name("Allure"),
-                "Generated",
-                new BambooKey("PLAN"))
+                "Manual",
+                new BambooKey("MAN"))
                 .oid(new BambooOid("1klermkuh4ow2"))
                 .pluginConfigurations(new ConcurrentBuilds(),
                         new AllOtherPluginsConfiguration()
@@ -38,13 +38,13 @@ public class PlanSpec {
                                         .put("custom", new MapBuilder()
                                                 .put("allure", new MapBuilder()
                                                         .put("server", new MapBuilder()
-                                                                .put("token", "123123")
-                                                                .put("endpoint", ""123123)
+                                                                .put("token", "")
+                                                                .put("endpoint", "")
                                                                 .build())
                                                         .put("upload.enabled", "false")
-                                                        .put("project.id", "123")
+                                                        .put("project.id", "")
                                                         .put("launch", new MapBuilder()
-                                                                .put("tags", "1231231")
+                                                                .put("tags", "")
                                                                 .put("name", "${buildPlanName} - #${buildNumber}")
                                                                 .build())
                                                         .put("artifact.name", "")
