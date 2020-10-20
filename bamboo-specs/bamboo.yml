@@ -2,7 +2,7 @@ version: 2
 plan:
   project-key: AL
   key: PLAN
-  name: My plan
+  name: Genrated
 
 stages:
   - Compile:
@@ -13,3 +13,10 @@ Test:
   tasks:
     - script:
         - ./gradlew clean test
+  pluginConfigurations:
+    allOtherPluginsConfiguration:
+      custom:
+        allure:
+          server:
+            token: 123123123123
+            endpoint: httpasdaklsjd
