@@ -13,9 +13,11 @@ Test:
   tasks:
     - script:
         - ./gradlew clean test
-  other:
-    custom:
-      allure:
-        server:
-          token: 123123123123
-          endpoint: httpasdaklsjd
+
+other:
+  concurrent-build-plugin: system-default
+  custom:
+    allure:
+      server:
+        token: 123123123123
+        endpoint: httpasdaklsjd
