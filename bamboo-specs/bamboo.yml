@@ -13,10 +13,9 @@ Test:
   tasks:
     - script:
         - ./gradlew clean test
-  pluginConfigurations:
-    allOtherPluginsConfiguration:
-      custom:
-        allure:
-          server:
-            token: 123123123123
-            endpoint: httpasdaklsjd
+  other:
+    custom:
+      allure:
+        server:
+          token: 123123123123
+          endpoint: httpasdaklsjd
